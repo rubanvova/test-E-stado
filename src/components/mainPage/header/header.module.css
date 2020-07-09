@@ -1,0 +1,105 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    padding-top: 66px;
+}
+
+
+.logoHeader {
+    background-image: url(/img/logoHeader.png);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 172px
+}
+
+.textLogo {
+    padding-top: 5px;
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 300;  
+    color: #242424;
+}
+
+.container2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.text1 {
+    padding-top: 73px;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.text2 {
+    padding-top: 12px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+} 
+
+.textGreen {
+    color: #50B520;
+    font-weight: 550;
+}
+
+.container3 {
+    display: flex;
+    padding-top: 27px;
+}
+
+.box1 {
+    background: url(/img/icon.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 51px;
+}
+
+.box1 div {
+    margin-left: 65px;
+}
+
+.box1 span{
+    font-weight: 800;
+}
+
+.box2 {
+    background: url(/img/icon.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 51px;
+}
+
+.box2 span{
+    font-weight: 800;
+}
+
+.box2 div{
+    margin-left: 65px;
+}
+
+.box3 {
+    background: url(/img/icon.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.box3 span {
+    font-weight: 800;
+}
+
+.box3 div{
+    margin-left: 65px;
+}
