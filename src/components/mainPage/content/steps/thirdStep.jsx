@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from '../content.module.css';
 
-export default () => {
-    return (
+export default () => (
         <div className={styles.thirdStep}>
            <div className={styles.textUpercase}>
                 ВОПРОС 3
@@ -31,5 +30,4 @@ export default () => {
                 </label>
             </div>
         </div>
-    )
-};
+);

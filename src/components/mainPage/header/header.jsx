@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './header.module.css';
 
 
-const Header = () => {
-    return (
+const Header = () => (
         <div className={styles.headerWrapper}>
            <div className={styles.container1}>
                <div className={styles.logoHeader}></div>
@@ -48,8 +47,7 @@ const Header = () => {
                </div>
            </div>
         </div>
-    )
-};
+);
 
 
 export default Header;

@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './App.module.css';
 import Header from './components/mainPage/header/header';
 import Content from './components/mainPage/content/content';
+import styles from './App.module.css';
 
 
-function App() {
+
+const App = () => {
   return (
     <div className={styles.App}>
       <div className={styles.wrapper}>

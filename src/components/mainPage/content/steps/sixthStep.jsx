@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from '../content.module.css';
 
-
-export default () => {
-    return ( 
+export default () => ( 
         <div className={styles.sixthStep}>
             <div className={styles.text}>
                  <span>Куда прислать вам ответ?</span>
@@ -49,5 +47,4 @@ export default () => {
                 </div>
             </div>
         </div>
-    )
-}
+);

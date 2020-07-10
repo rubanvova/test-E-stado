@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../content.module.css';
 
-export default () => {
-    return (
+
+export default () =>  (
         <div className={styles.ferstStep}>
             <div className={styles.textUpercase}>
                 ВОПРОС 1
@@ -15,5 +15,4 @@ export default () => {
                 <input placeholder='Например: 45' className={styles.input}/>
             </div>
         </div>
-    )
-};
+);
