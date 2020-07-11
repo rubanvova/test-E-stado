@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    white-space: pre-line;
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text p {
+    color:#50B520;
+    font-weight: 540;
+    margin-top: -30px;
+}
+
+.text span {
+    color:#50B520;
+    font-weight: 540;
+}

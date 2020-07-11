@@ -1,0 +1,63 @@
+.checkboxWrapper {
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.boxRadio {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 15px;
+    margin-top: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.radio {
+   display: none;
+}
+
+.fakeRadio {  
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.fakeRadio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 14px;
+    width: 14px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.fakeRadio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    height: 14px;
+    width: 14px;
+    background-color: #FEE9A1;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.radio:checked + .fakeRadio::before {
+    opacity: 1;
+}

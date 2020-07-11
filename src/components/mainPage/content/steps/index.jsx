@@ -1,5 +1,5 @@
-export {default as FirstStep} from './firstStep';
-export {default as SecondStep} from './secondStep';
-export {default as ThirdStep} from './thirdStep';
-export {default as FifthStep} from './fifthStep';
-export { default as SixthStep } from './sixthStep';
+export {default as FirstStep} from './FirstStep';
+export {default as SecondStep} from './SecondStep';
+export {default as ThirdStep} from './ThirdStep';
+export {default as FifthStep} from './FifthStep';
+

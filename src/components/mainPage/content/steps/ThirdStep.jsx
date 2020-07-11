@@ -1,14 +1,9 @@
 import React from 'react';
-import styles from '../content.module.css';
+import Step from './components/Step';
+import styles from './ThirdStep.module.css';
 
 export default () => (
-        <div className={styles.thirdStep}>
-           <div className={styles.textUpercase}>
-                ВОПРОС 3
-            </div>
-            <div className={styles.text}>
-                 <span>Вы являетесь?</span>
-            </div>
+        <Step title="ВОПРОС 3" questionGreen="Вы являетесь?" >
             <div className={styles.checkboxWrapper}>
                <label >
                    <div className={styles.boxRadio} >
@@ -29,5 +24,6 @@ export default () => (
                     </div>
                 </label>
             </div>
-        </div>
+        </Step>
 );
+

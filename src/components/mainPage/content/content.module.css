@@ -16,6 +16,7 @@
     height: 490px;
     width: 77%;
     padding: 8px;
+    position: relative;
 }
 
 .boxBar {
@@ -27,192 +28,7 @@
     height: 76px;
     width: 100%;
 }
-
-.ferstStep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-}
-
-.secondStep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-}
-
-.thirdStep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-}
-
-.checkboxWrapper {
-    z-index: 2;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-
-.boxRadio {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 15px;
-    margin-top: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    width: 100%;
-    height: 45px;
-    border-radius: 4px;
-}
-
-.radio {
-   display: none;
-}
-
-.fakeRadio {  
-    height: 20px;
-    width: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    margin-right: 10px;
-    position: relative;
-}
-
-.fakeRadio::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    height: 14px;
-    width: 14px;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-}
-
-.fakeRadio::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    height: 14px;
-    width: 14px;
-    background-color: #FEE9A1;
-    border-radius: 10px;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.radio:checked + .fakeRadio::before {
-    opacity: 1;
-}
  
-.fifthStep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-}
-
-.checkboxWrapperFifthStep {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    z-index: 2;
-    font-size: 16px;
-    font-weight: 600;
-    width: 70%;
-    padding-top: 20px;
-}
-
-.boxRadioFifthStep {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 15px;
-    margin-top: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    width: 150px;
-    height: 40px;
-    border-radius: 4px;
-    margin-right: 15px;
-}
-
-.textFifthStep {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    font-size: 13px;
-    padding-bottom: 10px;
-}
-
-.phoneNumberWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.05);
-    width: 300px;
-    height: 90px;
-    z-index: 2;
-}
-
-.phone {
-    padding-left: 50px;
-    outline: none;
-    font-size: 20px;
-    background-color: #F4F4F4;
-    border: 1px solid #F4F4F4;
-}
-
-.sixthStep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
-    height: 100%;
-    width: 100%;
-}
-
-.textSixthStep {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 13px;
-    margin-bottom: 10px;
-    margin-right: 80px;
-}
-
 /* ___________step___|____________ */
 /* __________________v____________  */
 .border {
@@ -241,10 +57,6 @@
     height: 10px;
 }
 
-.wrapperCircle {
- 
-}
-
 .barCircle  {
     background-color: #FFFFFF;
     border: 1px solid #F4F4F4;
@@ -260,8 +72,7 @@
     z-index: 2;
 }
 
-
-.activeGreenLineOne {
+.activeGreenLine {
     position: absolute;
     background: linear-gradient(0deg, rgba(80, 181, 32, 0.31), rgba(80, 181, 32, 0.31));
     width: 0%;
@@ -279,50 +90,16 @@
 /* ___________step___^___________ */
 /* __________________|____________  */
 
-
 .textUpercase {
     font-size: 14px;
     padding-top: 30px;
 }
 
-.text {
-    font-size: 24px;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.text span {
-    color:#50B520;
-    font-weight: 540;
-}
-
-.inputWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    background-color:#F4F4F4 ;
-    border-radius: 4px;
-    z-index: 2 ;
-    margin-top: 30px;
-}
-
-.input {
-    width: 85%;
-    background-color: #F4F4F4;
-    border: 1px solid #F4F4F4;
-    font-size: 16px;
-    color:rgba(0, 0, 0, 0.45);
-    outline: none;
-    margin-bottom: 5px;
-}
-
 .buttonWrapper {
    position: absolute;
-   top:885px;
    z-index: 2;
+   bottom: -18px;
 }
-
 
 .buttonNext {
     display: flex;
@@ -352,11 +129,9 @@
     width: 300px;
 }
 
-
 .buttonNext div {
     padding-left: 10px;
 }
-
 
 .buttonNext:hover {
     margin-top: 1px;
@@ -369,12 +144,8 @@
 }
 
 .arrow {
-
-}
-
-.arrowNoACtive {
-    display: none;
-}
+    margin-top: 2px;
+} 
 
 .cowWrapper {
     position: fixed;
@@ -383,10 +154,6 @@
     z-index: 1;
     height: 705px;
 } 
-
-.cow { 
-    
-}
 
 .cow img {
     height: 705px;

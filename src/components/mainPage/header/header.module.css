@@ -10,7 +10,6 @@
     padding-top: 66px;
 }
 
-
 .logoHeader {
     background-image: url(/img/logoHeader.png);
     background-repeat: no-repeat;
@@ -55,51 +54,10 @@
 .container3 {
     display: flex;
     padding-top: 27px;
+    width: 77%;
 }
 
-.box1 {
-    background: url(/img/icon.png);
-    background-repeat: no-repeat;
-    font-size: 12px;
-    line-height: 18px;
-    padding-right: 51px;
-}
 
-.box1 div {
-    margin-left: 65px;
-}
 
-.box1 span{
-    font-weight: 800;
-}
 
-.box2 {
-    background: url(/img/icon.png);
-    background-repeat: no-repeat;
-    font-size: 12px;
-    line-height: 18px;
-    padding-right: 51px;
-}
 
-.box2 span{
-    font-weight: 800;
-}
-
-.box2 div{
-    margin-left: 65px;
-}
-
-.box3 {
-    background: url(/img/icon.png);
-    background-repeat: no-repeat;
-    font-size: 12px;
-    line-height: 18px;
-}
-
-.box3 span {
-    font-weight: 800;
-}
-
-.box3 div{
-    margin-left: 65px;
-}

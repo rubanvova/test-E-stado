@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    padding: 0px 20px 0px 50px;
+}
+
+.column {
+   display: flex;
+   flex-direction: column;
+}
+
+.title {
+    white-space: pre-line;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.subTitle {
+    font-size: 12px;
+    line-height: 18px;
+}

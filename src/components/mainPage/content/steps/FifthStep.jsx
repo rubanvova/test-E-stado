@@ -1,17 +1,17 @@
 import React, { useState} from 'react';
 import InputMask from 'react-input-mask';
-import styles from '../content.module.css';
-
+import Step from './components/Step';
+import styles from './FifthStep.module.css';
 
 
 
 export default () => {
-const [activeRadio, setActiveRadio] = useState(true);
+const [activeRadio, setActiveRadio] = useState('phone');
 
 const phoneNumber = () => (
     <div>
         <div className={styles.textFifthStep}>
-         <div> Введите ваш номер телефона</div>
+             <div> Введите ваш номер телефона</div>
         </div>
         <div>
             <InputMask className={styles.phone}
@@ -38,56 +38,53 @@ const onChangeRadio = (value) => {
 };
 
 
-const  input = activeRadio => {
-   if (activeRadio === true) {
+const  getInputField = activeRadio => {
+   if (activeRadio === 'phone') {
        return phoneNumber();
    }
-   if (activeRadio === false) {
        return Email();
-   }
 };
 
     return (
-        <div className={styles.fifthStep}>
-            <div className={styles.text}>
-                 <span>Куда прислать вам ответ?</span>
-            </div>
+        <Step questionTop="Куда прислать вам ответ?">
             <div className={styles.checkboxWrapperFifthStep}>
                <label >
                    <div className={styles.boxRadioFifthStep} >
-                       <input className={styles.radio} type="radio"  name="yes"  onClick={ () => onChangeRadio(true)}/>По телефону 
+                       <input className={styles.radio} type="radio"  name="yes"  onClick={ () => onChangeRadio('phone')}/>По телефону 
                        <div className={styles.fakeRadio}></div>
                     </div>
                 </label>
                <label >
                    <div className={styles.boxRadioFifthStep}>
-                       <input className={styles.radio}  type="radio" name="yes" onClick={ () =>onChangeRadio(false)}/>E-mail
+                       <input className={styles.radio}  type="radio" name="yes" onClick={ () =>onChangeRadio('email')}/>E-mail
                        <div className={styles.fakeRadio}></div>
                     </div>
                 </label>
                <label >
                    <div className={styles.boxRadioFifthStep}>
-                        <input className={styles.radio}  type="radio" name="yes" onClick={ () => onChangeRadio(true)}/>Viber
+                        <input className={styles.radio}  type="radio" name="yes" onClick={ () => onChangeRadio('phone')}/>Viber
                        <div className={styles.fakeRadio}></div>
                     </div>
                 </label>
                 <label >
                    <div className={styles.boxRadioFifthStep}>
-                        <input className={styles.radio}  type="radio" name="yes" onClick={ () => onChangeRadio(true)}/>Telegram
+                        <input className={styles.radio}  type="radio" name="yes" onClick={ () => onChangeRadio('phone')}/>Telegram
                        <div className={styles.fakeRadio}></div>
                     </div>
                 </label>
                 <label >
                    <div className={styles.boxRadioFifthStep}>
-                        <input className={styles.radio}  type="radio" name="yes" onClick={ () => onChangeRadio(true)}/>Whatsaap
+                        <input className={styles.radio}  type="radio" name="yes" onClick={ () => onChangeRadio('phone')}/>Whatsaap
                        <div className={styles.fakeRadio}></div>
                     </div>
                 </label>
             </div>
             <div className={styles.phoneNumberWrapper}>
-                {input(activeRadio)}
+
+                {getInputField(activeRadio)}
+
             </div>
-        </div>
+        </Step>
     )
 };
 

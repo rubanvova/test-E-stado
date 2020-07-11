@@ -1,6 +1,6 @@
 import React from 'react'; 
+import Box from './Box';
 import styles from './header.module.css';
-
 
 const Header = () => (
         <div className={styles.headerWrapper}>
@@ -21,30 +21,18 @@ const Header = () => (
                 </div>
            </div>
            <div className={styles.container3}>
-               <div className={styles.box1}>
-                   <div>
-                        <span>Своевременного<br/>
-                        определения половой охоты</span><br/>
-                        особенно если она не заметна <br/>
-                        по внешним признакам
-                    </div>
-               </div>
-               <div className={styles.box2}>
-                   <div>
-                        <span>Анализом состояния<br/>
-                        здоровья коровы</span><br/>
-                        при наблюдении за жвачкой,<br/>
-                        активностью и температурой тела
-                    </div>
-               </div>
-               <div className={styles.box3}>
-                    <div>
-                        <span>Выявление хромоты</span><br/>
-                        предупреждением <br/>
-                        и выявлением развития <br/>
-                        хромоты
-                    </div>
-               </div>
+               <Box 
+                title={'Своевременного\n определения половой охоты'}
+                subTitle="особенно если она не заметна по внешним признакам"
+                />
+                <Box 
+                title={'Анализом состояния\n здоровья коровы'}
+                subTitle="при наблюдении за жвачкой,  активностью и температурой тела"
+                 />
+                 <Box
+                 title="Выявление хромоты"
+                 subTitle="предупреждением и выявлением развития хромоты"
+                 />
            </div>
         </div>
 );
