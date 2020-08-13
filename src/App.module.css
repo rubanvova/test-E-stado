@@ -1,11 +1,11 @@
 .App {
-    min-height: 100vh;
-    background-image: url(/img/background.png);
-    background-size: cover;
-    overflow: hidden;
+  min-height: 100vh;
+  background-image: url(/img/background.png);
+  background-size: cover;
+  overflow: hidden;
 }
 
 .wrapper {
-    margin: 0 auto;
-    width: 1250px;
+  margin: 0 auto;
+  width: 1250px;
 }
